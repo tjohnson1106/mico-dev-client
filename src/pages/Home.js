@@ -20,12 +20,19 @@ function Home() {
         {loading ? (
           <h1>Loading posts..</h1>
         ) : (
-          posts &&
-          posts.map((post) => (
-            <Grid.Column key={post.id}>
-              <PostCard post={post} />
-            </Grid.Column>
-          ))
+          posts.map(
+            (post) =>
+              posts && (
+                <Grid.Column
+                  key={post.id}
+                  style={{
+                    marginBottom: 20
+                  }}
+                >
+                  <PostCard post={post} />
+                </Grid.Column>
+              )
+          )
         )}
       </Grid.Row>
     </Grid>
