@@ -15,7 +15,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-export default (
+// must be arrow function or throws element type error
+export default () => (
   <ApolloProvider client={client}>
     <App />
   </ApolloProvider>

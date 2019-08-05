@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MenuBar from "./components/MenuBar";
 
-export default function App() {
+function App() {
   return (
     <Router>
       <Container>
@@ -22,3 +22,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App;
